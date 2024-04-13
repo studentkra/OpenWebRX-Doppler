@@ -13,7 +13,9 @@ How to use:
 
 For admins:
 
-Place two files sat.js and append.js to /usr/lib/python3/dist-packages/htdocs/plugins/receiver/ folder.
+Place two files sat.js and append.js to 
+```/usr/lib/python3/dist-packages/htdocs/plugins/receiver/``` 
+folder.
 
 Replace your GPS in append.js file.
 
