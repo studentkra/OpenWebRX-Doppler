@@ -43,8 +43,8 @@ if (is_tracking == false)
 is_tracking = true;
 var my_sat = mi1.value;
 var sat_ID = mi1.value;
-var my_lat = 56.089816;
-var my_lon = 38.134596;
+var my_lat = 56.000000;
+var my_lon = 38.000000;
 var t_1, t_2;
 var sat_freq = Get_current_frq();
 console.log(sat_freq);
