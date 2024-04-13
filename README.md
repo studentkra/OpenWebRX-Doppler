@@ -1,6 +1,6 @@
 # OpenWebRX-Doppler
 
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
+<img src="https://github.com/studentkra/OpenWebRX-Doppler/blob/main/Example.jpg" height="32"/></h1>
 
 
 OpenWebRX satellite Doppler tracer
