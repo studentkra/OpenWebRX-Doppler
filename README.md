@@ -35,4 +35,6 @@ You will see the name of satellite and trackin is running.
 
 If TLE of satellite will no be fined, you will see alert message.
 
-If you are not admin of OpenWebRX, just paste the content jf two files in browser console (F12 button) and press enter.
+For users: 
+
+Just paste the content of two files in browser console (F12 button) and press enter.
