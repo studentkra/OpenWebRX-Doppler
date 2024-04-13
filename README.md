@@ -20,10 +20,10 @@ Replace your GPS in append.js file.
 Open "Photo desctiption" and paste this text:
 
 
-<script src="static/plugins/receiver/sat.js"></script>
+```<script src="static/plugins/receiver/sat.js"></script>
 
 
-<script src="static/pludins/receiver/append.js"></script>
+<script src="static/pludins/receiver/append.js"></script>```
 
 
 You will see smal panel under the main panel in web interface of OpenWebRX.
