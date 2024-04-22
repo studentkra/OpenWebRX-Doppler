@@ -43,8 +43,18 @@ if (is_tracking == false)
 is_tracking = true;
 var my_sat = mi1.value;
 var sat_ID = mi1.value;
+var receiver_GPS = Utils.getReceiverPos();
+if ((receiver_GPS == undefined) || (receiver_GPS == null) )
+{
 var my_lat = 56.000000;
 var my_lon = 38.000000;
+alert("No GPS found. Using GPS from js file")
+}
+else
+{
+var my_lat = receiver_GPS.lat;
+var my_lon = receiver_GPS.lon;
+}
 var t_1, t_2;
 var sat_freq = Get_current_frq();
 console.log(sat_freq);
