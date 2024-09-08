@@ -14,27 +14,42 @@ var current_frequency = fff + center_freq;
 return (current_frequency);
 }
 var is_tracking = false;
+var divider = document.createElement("div");
+divider.classList.add('openwebrx-section-divider');
+divider.innerText = '▾ Doppler shift';
+divider.setAttribute('onclick', 'UI.toggleSection(this);')
+var section = document.createElement("div");
+section.classList.add('openwebrx-section');
+section.setAttribute('id', 'openwebrx-section-doppler')
 var mi1 = document.createElement("input");
 mi1.setAttribute('type', 'text');
-mi1.setAttribute('value', 'SAT ID');
+mi1.setAttribute('value', '');
+mi1.setAttribute('placeholder', 'SAT ID');
 mi1.style.width  = '60px';
-mi1.style.height  = '20px';
+mi1.style.padding = '3px';
 var mi2 = document.createElement("button");
-//mi2.setAttribute('type', 'text');
 mi2.innerText = 'SAT NAME';
-mi2.style.textAlign = 'left';
-mi2.style.width  = '130px';
-mi2.style.height  = '20px';
+mi2.style.width  = '120px';
+mi2.style.height  = '27px';
+mi2.style.marginLeft = '10px';
+mi2.style.marginRight = '10px';
+mi2.style.color = 'white';
+mi2.style.borderRadius = '5px';
+mi2.style.background = 'linear-gradient(#373737, #4F4F4F)';
+mi2.style.border = 'none';
 var mibutton = document.createElement('button')
-mibutton.innerText = 'GO!'
-mibutton.style.width  = '50px';
-mibutton.style.height  = '20px';
+mibutton.innerText = 'GO'
+mibutton.classList.add('openwebrx-button');
+mibutton.style.border = 'none';
+mibutton.style.height = '27px';
 mibutton.addEventListener('click', () => {
 start_track();
 })
-document.getElementById(id="openwebrx-panel-receiver").appendChild(mi1);
-document.getElementById(id="openwebrx-panel-receiver").appendChild(mi2);
-document.getElementById(id="openwebrx-panel-receiver").appendChild(mibutton);
+document.getElementById(id="openwebrx-panel-receiver").appendChild(divider);
+document.getElementById(id="openwebrx-panel-receiver").appendChild(section);
+document.getElementById(id="openwebrx-section-doppler").appendChild(mi1);
+document.getElementById(id="openwebrx-section-doppler").appendChild(mi2);
+document.getElementById(id="openwebrx-section-doppler").appendChild(mibutton);
 mi1.onclick = function() {mi1.value = "";}
 function start_track()
 {
