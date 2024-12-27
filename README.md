@@ -1,5 +1,10 @@
 # OpenWebRX-Doppler
 
+https://github.com/0xAF
+https://0xaf.github.io/openwebrxplus-plugins/receiver/doppler
+
+Doppler Tracing is now available as a [plugin](https://0xaf.github.io/openwebrxplus-plugins/receiver/doppler) from [Stanislav Lechev](https://github.com/0xAF) for OpenWebRX+
+
 <img src="https://github.com/studentkra/OpenWebRX-Doppler/blob/main/Example.jpg" height="120"/></h1>
 
 Video:
